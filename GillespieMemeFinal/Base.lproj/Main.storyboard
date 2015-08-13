@@ -59,7 +59,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdu-zp-02y">
                                             <rect key="frame" x="181" y="52" width="355" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="it4-Nm-54w">
@@ -219,7 +219,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zt2-5Y-3Rf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zt2-5Y-3Rf">
                                 <rect key="frame" x="-9" y="72" width="614" height="490"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZDB-sF-UdQ">
@@ -285,21 +285,57 @@
                             <constraint firstItem="0v2-FJ-bVD" firstAttribute="leading" secondItem="URg-Xi-WRK" secondAttribute="leadingMargin" constant="-16" id="1t3-6A-JgD"/>
                             <constraint firstItem="eGo-Ir-OS5" firstAttribute="leading" secondItem="URg-Xi-WRK" secondAttribute="leadingMargin" constant="-16" id="1yy-Vm-HwV"/>
                             <constraint firstItem="0v2-FJ-bVD" firstAttribute="top" secondItem="vWf-fL-re6" secondAttribute="bottom" constant="8" id="3Gy-PB-xbf"/>
+                            <constraint firstAttribute="trailing" secondItem="zt2-5Y-3Rf" secondAttribute="trailing" id="A6B-0B-pue"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ARn-Ja-9Gz" secondAttribute="trailing" constant="-16" id="GN8-fL-FRJ"/>
                             <constraint firstItem="p75-Bo-rKS" firstAttribute="top" secondItem="ARn-Ja-9Gz" secondAttribute="bottom" id="GUn-nT-gnD"/>
                             <constraint firstItem="p75-Bo-rKS" firstAttribute="top" secondItem="zt2-5Y-3Rf" secondAttribute="bottom" constant="38" id="IeA-y5-mcf"/>
+                            <constraint firstItem="zt2-5Y-3Rf" firstAttribute="top" secondItem="0v2-FJ-bVD" secondAttribute="bottom" id="Jop-nU-xfg"/>
+                            <constraint firstAttribute="centerX" secondItem="zt2-5Y-3Rf" secondAttribute="centerX" constant="2" id="NTJ-Iv-HeX"/>
+                            <constraint firstItem="zt2-5Y-3Rf" firstAttribute="leading" secondItem="URg-Xi-WRK" secondAttribute="leadingMargin" id="QEI-ml-B9o"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0v2-FJ-bVD" secondAttribute="trailing" constant="-16" id="QM2-Ov-RSW"/>
+                            <constraint firstItem="zt2-5Y-3Rf" firstAttribute="leading" secondItem="URg-Xi-WRK" secondAttribute="leadingMargin" constant="-25" id="RG8-Dl-C7y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zt2-5Y-3Rf" secondAttribute="trailing" constant="-21" id="Ux0-Mc-k2S"/>
                             <constraint firstItem="ZDB-sF-UdQ" firstAttribute="leading" secondItem="URg-Xi-WRK" secondAttribute="leadingMargin" constant="-16" id="WuS-pf-bzY"/>
                             <constraint firstItem="ARn-Ja-9Gz" firstAttribute="leading" secondItem="URg-Xi-WRK" secondAttribute="leadingMargin" constant="-16" id="XbG-id-zRq"/>
+                            <constraint firstItem="p75-Bo-rKS" firstAttribute="top" secondItem="zt2-5Y-3Rf" secondAttribute="bottom" constant="38" id="XuT-lk-34O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zt2-5Y-3Rf" secondAttribute="trailing" id="YUw-Un-QrM"/>
                             <constraint firstItem="ZDB-sF-UdQ" firstAttribute="top" secondItem="0v2-FJ-bVD" secondAttribute="bottom" constant="36" id="bqL-tb-wbY"/>
                             <constraint firstItem="ARn-Ja-9Gz" firstAttribute="top" secondItem="eGo-Ir-OS5" secondAttribute="bottom" constant="42" id="dmm-OR-Bgn"/>
+                            <constraint firstItem="p75-Bo-rKS" firstAttribute="top" secondItem="zt2-5Y-3Rf" secondAttribute="bottom" id="eSd-0K-MQ6"/>
+                            <constraint firstItem="zt2-5Y-3Rf" firstAttribute="top" secondItem="0v2-FJ-bVD" secondAttribute="bottom" id="f63-aG-xbG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zt2-5Y-3Rf" secondAttribute="trailing" constant="-21" id="jFN-gB-dfk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZDB-sF-UdQ" secondAttribute="trailing" constant="-16" id="lzG-CC-boo"/>
+                            <constraint firstItem="zt2-5Y-3Rf" firstAttribute="leading" secondItem="URg-Xi-WRK" secondAttribute="leading" id="pPR-b2-PTL"/>
+                            <constraint firstItem="zt2-5Y-3Rf" firstAttribute="top" secondItem="0v2-FJ-bVD" secondAttribute="bottom" id="qLN-2q-lc3"/>
+                            <constraint firstItem="zt2-5Y-3Rf" firstAttribute="top" secondItem="vWf-fL-re6" secondAttribute="bottom" constant="52" id="r64-UN-ZPC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eGo-Ir-OS5" secondAttribute="trailing" constant="-16" id="tbG-7s-7yQ"/>
                             <constraint firstItem="zt2-5Y-3Rf" firstAttribute="top" secondItem="0v2-FJ-bVD" secondAttribute="bottom" id="u8J-Gl-Gaq"/>
                             <constraint firstItem="ZDB-sF-UdQ" firstAttribute="centerX" secondItem="zt2-5Y-3Rf" secondAttribute="centerX" constant="2" id="uHu-Pm-XPH"/>
                             <constraint firstItem="zt2-5Y-3Rf" firstAttribute="leading" secondItem="URg-Xi-WRK" secondAttribute="leadingMargin" constant="-25" id="vtQ-p5-8YU"/>
+                            <constraint firstItem="p75-Bo-rKS" firstAttribute="top" secondItem="zt2-5Y-3Rf" secondAttribute="bottom" constant="38" id="zep-Rd-wEw"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="A6B-0B-pue"/>
+                                <exclude reference="Jop-nU-xfg"/>
+                                <exclude reference="QEI-ml-B9o"/>
+                                <exclude reference="RG8-Dl-C7y"/>
+                                <exclude reference="Ux0-Mc-k2S"/>
+                                <exclude reference="YUw-Un-QrM"/>
+                                <exclude reference="f63-aG-xbG"/>
+                                <exclude reference="jFN-gB-dfk"/>
+                                <exclude reference="pPR-b2-PTL"/>
+                                <exclude reference="qLN-2q-lc3"/>
+                                <exclude reference="r64-UN-ZPC"/>
+                                <exclude reference="u8J-Gl-Gaq"/>
+                                <exclude reference="vtQ-p5-8YU"/>
+                                <exclude reference="uHu-Pm-XPH"/>
+                                <exclude reference="IeA-y5-mcf"/>
+                                <exclude reference="XuT-lk-34O"/>
+                                <exclude reference="eSd-0K-MQ6"/>
+                                <exclude reference="zep-Rd-wEw"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="cameraButton" destination="Bpw-ev-rov" id="2C4-D1-S3G"/>
@@ -377,7 +413,7 @@
     </scenes>
     <resources>
         <image name="iconCollection" width="89" height="90"/>
-        <image name="iconTable" width="90" height="90"/>
+        <image name="iconTable" width="44" height="48"/>
         <image name="trash" width="122" height="74"/>
     </resources>
     <inferredMetricsTieBreakers>

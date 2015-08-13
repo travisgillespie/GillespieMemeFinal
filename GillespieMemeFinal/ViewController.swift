@@ -38,7 +38,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         NSStrokeWidthAttributeName : -3.0,
         NSStrokeColorAttributeName : UIColor.blackColor(),
         NSForegroundColorAttributeName : UIColor.whiteColor(),
-        NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 24)!
+        NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!
 
     ]
     
@@ -97,7 +97,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let pickedImage = info[
             UIImagePickerControllerOriginalImage
             ] as? UIImage{
-                pickerImageView.contentMode = UIViewContentMode.ScaleAspectFill
+                pickerImageView.contentMode = UIViewContentMode.ScaleAspectFit
                 pickerImageView.image = pickedImage
             }
         dismissViewControllerAnimated(true, completion: nil)
